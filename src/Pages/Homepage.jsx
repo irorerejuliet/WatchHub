@@ -1,9 +1,10 @@
 import React from 'react'
+import Herosectio from '../Components/Herosectio'
 
 const Homepage = () => {
   return (
     <div>
-      <h2>HomePage</h2>
+      <Herosectio/>
     </div>
   )
 }

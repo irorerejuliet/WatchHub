@@ -12,19 +12,19 @@ const Navbar = () => {
           </div>
         </Link>
         <div className="flex">
-          <ul className='flex text-lg font-mediumjustify-between items-center gap-20 '>
+          <ul className='flex text-lg font-medium justify-between items-center gap-20 uppercase'>
             <li>Home</li>
             <li>Product</li>
             <li>Contact</li>
             <li>App</li>
           </ul>
         </div>
-        <div className='text-m'>
+        <div className='text-m flex justify-between items-center gap-5'>
         
           <Link to="/cart">
-            <div className='flex relative cursor-pointer'>
+            <div className='flex justify-between  items-center relative cursor-pointer'>
               <BiCart />
-              <p className='bg-red-700 absolute right-[-8px] text-xs h-10 w-5 r text-white flex justify-center items-center'>0</p>
+              <p className='bg-red-700 absolute right-[-8px] text-xs h-3 w-3 p-1  text-white flex justify-center items-center rounded-[50px]'>0</p>
             </div>
           </Link>
           <BiUser />
