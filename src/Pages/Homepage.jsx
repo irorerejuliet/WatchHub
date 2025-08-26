@@ -1,12 +1,12 @@
-import React from 'react'
-import Herosectio from '../Components/Herosectio'
+
+import Herosection from '../Components/Herosection';
 
 const Homepage = () => {
   return (
-    <div>
-      <Herosectio/>
+    <div className="bg-heroImg  bg-cover bg-left h-screen">
+      <Herosection />
     </div>
-  )
+  );
 }
 
 export default Homepage
