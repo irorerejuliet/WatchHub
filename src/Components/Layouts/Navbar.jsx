@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="bg-[#CAE9EE]">
       <div className="flex items-center justify-between px-10">
-        <Link className="/">
+        <Link to ="/">
             <img src="/images/logo2-removebg-preview.png" alt="logo" className="w-[230px]" />
         </Link>
         <div className="flex">
