@@ -8,14 +8,14 @@ const Herosection = () => {
             <h2 className="text-6xl font-bold w-[660px] ">
               Unleash Premuim And Smart Quality Watches
             </h2>
-            <p className="w-[990px]">
+            <p className="text-xl mt-10  w-[990px]">
               This stainless steel wristwatch combines precision with
               sophistication. Featuring a sapphire crystal glass, automatic
               movement, and water resistance up to 50m, it’s designed for those
               who want both durability and class. Perfect for business meetings
               or evening events.
             </p>
-            <button>Shop the Collection</button>
+            <button className="py-3 px-20 bg-red-600 hover:bg-red-800  text-white rounded-xl mt-4 ">Shop the Collection</button>
           </div>
         </div>
       </div>
