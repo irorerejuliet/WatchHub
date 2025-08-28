@@ -1,6 +1,8 @@
-import React, { useState } from "react";
-import { ShopContext } from "./ShopContext";
+import React, { createContext, useState } from "react";
 import { productData } from "../constant/productData";
+
+
+export const ShopContext = createContext();
 
 const ShopContextProvider = ({ children }) => {
   const [products, setProducts] = useState(productData);
