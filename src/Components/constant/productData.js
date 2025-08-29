@@ -73,7 +73,7 @@ export const productData = [
   },
   {
     id: 9,
-    image: "/images/Product-9.webp",
+    image: "/images/Product-9.png",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 56,
     categories: "men",
@@ -82,7 +82,7 @@ export const productData = [
   },
   {
     id: 10,
-    image: "/images/Product-10.avif",
+    image: "c/images/Product-10.avif",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 19,
     categories: "men",
@@ -91,7 +91,7 @@ export const productData = [
   },
   {
     id: 11,
-    image: "/images/Product-11.jpeg",
+    image: "/images/Product-11.png",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 189,
     categories: "men",
