@@ -28,12 +28,12 @@ export const productData = [
   },
   {
     id: 4,
-    image: "/images/Product-4.avif",
+    image: "/images/Product-4.webp",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 67,
     categories: "men",
     description:
-      "Galaxy Watch6 Classic (47mm, Bluetooth): Stylish design, big display, rotating bezel, and smart health tracking.",
+      "Redhai Automatic Mechanical Watch Skeleton Stainless 50M Waterproof Anti Shock Casual Diver Men Wrist Watch Sterling Watches Chronograph Analog Business Casual Fashion Adjustable Stainless Steel Band.",
   },
   {
     id: 5,
@@ -100,7 +100,7 @@ export const productData = [
   },
   {
     id: 12,
-    image: "/images/Produc-12.jpeg",
+    image: "/images/Produc-12.png",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 980,
     categories: "men",
@@ -109,7 +109,7 @@ export const productData = [
   },
   {
     id: 13,
-    image: "/images/Product-13.jpeg",
+    image: "/images/Product-13.png",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 190,
     categories: "men",
@@ -118,7 +118,7 @@ export const productData = [
   },
   {
     id: 14,
-    image: "/images/Product-14.jpeg",
+    image: "/images/Product-14.png",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 260,
     categories: "men",
@@ -127,7 +127,7 @@ export const productData = [
   },
   {
     id: 15,
-    image: "/images/product-15.jpg",
+    image: "/images/product-15.png",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 320,
     categories: "men",
