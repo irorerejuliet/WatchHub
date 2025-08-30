@@ -11,10 +11,10 @@ const ProductList = () => {
   return (
     <div>
       <div className="max-w-[1740px] m-auto p-20  text-center mt-40">
-        <h2 className="mb-60 font-base color-[#333]">
+        <h2 className="pt-[12em] font-bold text-3xl font-poppins">
           Our Elegant & Expectional Collection
         </h2>
-        <div className="grid grid-cols-4 md:grid-cols-2 gap-10 ">
+        <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 mt-20">
           {products.map(({ id, image, title, price }) => (
             <div
               key={id}
