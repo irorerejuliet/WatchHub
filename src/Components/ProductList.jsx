@@ -10,25 +10,37 @@ const ProductList = () => {
 
   return (
     <div>
-      <div>
-        <h2>Our Elegant & Expectional Collection</h2>
-        <div>
-          {products.map(({id, image, title, price}) =>  (
-            <div key={id}>
+      <div className="max-w-[1740px] m-auto p-20  text-center mt-40">
+        <h2 className="mb-60 font-base color-[#333]">
+          Our Elegant & Expectional Collection
+        </h2>
+        <div className="grid grid-cols-4 md:grid-cols-2 gap-10 ">
+          {products.map(({ id, image, title, price }) => (
+            <div
+              key={id}
+              className="bg-white border border-gray-200 rounded-[8px]"
+            >
               <Link to={`/product/${id}`}>
-                <img src={image} alt={title} />
+                <img
+                  src={image}
+                  alt={title}
+                  className=" text-center m-auto py-4"
+                />
                 <div>
-                  <h4>{title}</h4>
-                  <p>${price}</p>
+                  <h4 className="text-xm font-semibold ">{title}</h4>
+                  <p className="text-[1rem] text-gray-400 py-2">${price}</p>
                 </div>
               </Link>
-              <button>Add To Cart</button>
+              {/* How to write bg transition here */}
+              <button className=" bg-white text-black border border-red-400 cursor-pointer text-[1rem]  hover:bg-red-800 hover:text-white py-2 px-20 ">
+                Add To Cart
+              </button>
             </div>
           ))}
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default ProductList

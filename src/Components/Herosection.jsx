@@ -5,10 +5,11 @@ const Herosection = () => {
       <div>
         <div>
           <div className="max-w-[50%] pt-44">
-            <h2 className="text-6xl font-bold w-[660px] ">
+            <h2 className="text-6xl
+            md:text-2xl font-bold w-[660px] ">
               Unleash Premuim And Smart Quality Watches
             </h2>
-            <p className="text-xl mt-10  w-[990px]">
+            <p className="text-xl  mt-10  w-[990px] ">
               This stainless steel wristwatch combines precision with
               sophistication. Featuring a sapphire crystal glass, automatic
               movement, and water resistance up to 50m, it’s designed for those
