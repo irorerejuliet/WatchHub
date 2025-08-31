@@ -24,7 +24,7 @@ const ProductList = () => {
                 <img
                   src={image}
                   alt={title}
-                  className=" text-center m-auto py-4"
+                  className="max-w-full max-h-full object-contain text-center m-auto py-4"
                 />
                 <div>
                   <h4 className="text-xm font-semibold ">{title}</h4>
