@@ -13,7 +13,7 @@ const ShopContextProvider = ({ children }) => {
 
   // Calculate total price
   useEffect(() => {
-    
+    const total = c
   })
 
   // calculate quantity of items in cart 
