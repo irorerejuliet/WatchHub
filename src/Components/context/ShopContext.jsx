@@ -58,20 +58,32 @@ const ShopContextProvider = ({ children }) => {
   // function to remove from cart 
   const removeFromCart = (id) => {
     const newCart = cart.filter((item) => {
-      return item.id ! == id;
+      return item.id !== id;
     })
-    setCart
+    setCart(newCart)
   }
 
   //function to clear the entire cart 
+  const clearCart = () => {
+    setCart([])
+  }
 
   //function to incraese item quantity in cart
+  const incraeseAmount = (id) =>{
+    const cartItem = cart.find((item) => item.id === id)
+    addToCart(cartItem, id)
+  }
 
   //function to decraese item quantity cart
+  const decreaseAmount = (id) =>{
+    const cart
+  }
 
 
   return (
-    <ShopContext.Provider value={{ products, setProducts }}>
+    <ShopContext.Provider
+      value={{ products, cart, clearCart, quantity, setProducts }}
+    >
       {children}
     </ShopContext.Provider>
   );
