@@ -13,14 +13,55 @@ const ShopContextProvider = ({ children }) => {
 
   // Calculate total price
   useEffect(() => {
-    const total = c
-  })
+    const total = cart.reduce((accumulator, currentItem) => {
+    const priceAsNumber = parseFloat(currentItem.price)
+    if(isNaN(priceAsNumber)) {
+      return accumulator
+    }
+
+    return accumulator + priceAsNumber * currentItem.amount
+  },0)
+    setTotal(total)
+  }, [cart])
 
   // calculate quantity of items in cart 
+  useEffect(() =>{
+    if (cart){
+      const amount = cart.reduce((accumulator, currentItem) => {
+        return accumulator + currentItem.amount
+      },0)
+      setQuantity(amount)
+    }
+  }, [cart])
 
   // fiuntion to add to cart
+  const addToCart = (product, id) => {
+    const newItem = {...product, amount: 1}
+    const cartItem = cart.find((item) => {
+      return item.id ===id;
+    })
+
+    if(cartItem){
+      const newCart =[...cart].map((item) =>{
+        if(item.id === id){
+          return{...item, amount: cartItem.amount + 1}
+        }else{
+          return item
+        }
+      })
+      setCart(newCart)
+    }else{
+      setCart([...cart, newItem])
+    }
+  }
 
   // function to remove from cart 
+  const removeFromCart = (id) => {
+    const newCart = cart.filter((item) => {
+      return item.id ! == id;
+    })
+    setCart
+  }
 
   //function to clear the entire cart 
 
