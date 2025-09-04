@@ -88,13 +88,17 @@ const ShopContextProvider = ({ children }) => {
         }
       })
       setCart(newCart)
+    } else{
+      if(cartItem.amount < 2) {
+        removeFromCart(id)
+      }
     }
   }
 
 
   return (
     <ShopContext.Provider
-      value={{ products, cart, clearCart, quantity, setProducts }}
+      value={{ products, cart, clearCart, quantity, decreaseAmount, incraeseAmount, removeFromCart, addToCart, setProducts }}
     >
       {children}
     </ShopContext.Provider>
