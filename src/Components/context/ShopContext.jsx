@@ -76,7 +76,19 @@ const ShopContextProvider = ({ children }) => {
 
   //function to decraese item quantity cart
   const decreaseAmount = (id) =>{
-    const cart
+    const cartItem = cart.find((item) => {
+      return item.id === id
+    })
+    if(cartItem){
+      const newCart = cart.map ((item) => {
+        if(item.id === id){
+          return{...item, amount: cartItem.amount - 1}
+        } else {
+          return item
+        }
+      })
+      setCart(newCart)
+    }
   }
 
 
