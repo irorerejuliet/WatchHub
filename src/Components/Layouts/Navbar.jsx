@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { BiCart, BiUser } from 'react-icons/bi'
 import { Link } from 'react-router-dom';
+import  {ShopContext} from '../context/ShopContext'
 
 const Navbar = () => {
+  const {quantity} = useContext(ShopContext)
   return (
     <div className="bg-[#CAE9EE]">
       <div className="flex items-center justify-between px-10">
@@ -22,7 +24,7 @@ const Navbar = () => {
             <div className="flex justify-between  items-center relative cursor-pointer">
               <BiCart />
               <p className="bg-red-700 absolute right-[-8px] text-xs h-3 w-3 p-1  text-white flex justify-center items-center rounded-[50px]">
-                0
+                {quantity}
               </p>
             </div>
           </Link>
