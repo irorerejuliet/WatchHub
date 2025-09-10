@@ -15,7 +15,7 @@ const ProductList = () => {
           Our Elegant & Expectional Collection
         </h2>
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 mt-20 ">
-          {products.map(({ id, image, title, price }) => (
+          {products.map(({id, image, title, price }) => (
             <div
               key={id}
               className="bg-white border border-gray-200 rounded-[8px] "
