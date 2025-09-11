@@ -1,7 +1,6 @@
 import { useContext } from "react"
 import { Link } from "react-router-dom"
-// import {ShopContext} from "../context/ShopContext"
-import ShopContext from "./context/ShopContext"
+import {ShopContext} from "./context/ShopContext"
 
 
 const ProductList = () => {
@@ -31,7 +30,7 @@ const ProductList = () => {
                   <p className="text-base text-gray-500 py-2">${price}</p>
                 </div>
               </Link>
-              <button onClick={() => addToCart(product, id)} className=" bg-white text-black border border-red-400  py-2 px-20 rounded-[5px] hover:bg-red-600 hover:text-white ">
+              <button onClick={() => addToCart(products, id)} className=" bg-white text-black border border-red-400  py-2 px-20 rounded-[5px] hover:bg-red-600 hover:text-white ">
                 Add To Cart
               </button>
             </div>

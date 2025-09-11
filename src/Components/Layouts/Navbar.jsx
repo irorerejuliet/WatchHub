@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { BiCart, BiUser } from 'react-icons/bi'
 import { Link } from 'react-router-dom';
-import ShopContext from "../context/ShopContext"
+import {ShopContext} from "../context/ShopContext"
 
 const Navbar = () => {
   const {quantity} = useContext(ShopContext)
