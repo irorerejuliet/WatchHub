@@ -2,14 +2,14 @@ import React, { createContext, useEffect, useState } from "react";
 import { productData } from "../constant/productData";
 
 
-
+export const ShopContext = createContext();
 
 
 const ShopContextProvider = ({ children }) => {
 
   const [products, setProducts] = useState(productData);
   const [cart, setCart] = useState([])
-  const [quantity, setQuantity] = (0)
+  const [quantity, setQuantity] = useState(0)
   const [total, setTotal] = useState(0)
 
   // Calculate total price
@@ -99,7 +99,18 @@ const ShopContextProvider = ({ children }) => {
 
   return (
     <ShopContext.Provider
-      value={{ products, cart, clearCart, quantity, decreaseAmount, incraeseAmount, removeFromCart, addToCart, setProducts }}
+      value={{
+        products,
+        cart,
+        total,
+        quantity,
+        clearCart,
+         decreaseAmount,
+        incraeseAmount,
+        removeFromCart,
+        addToCart,
+        setProducts,
+      }}
     >
       {children}
     </ShopContext.Provider>
