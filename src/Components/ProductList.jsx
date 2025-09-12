@@ -7,6 +7,7 @@ const ProductList = () => {
 
   const {products, addToCart} = useContext(ShopContext)
 
+
   return (
     <div>
       <div className="max-w-[1740px] m-auto p-20  text-center mt-40">
