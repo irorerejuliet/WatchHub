@@ -9,13 +9,13 @@ import Cart from "./Pages/Cart"
 const App = () => {
   return (
     <>
-     <Navbar/>
-     <Routes>
-      <Route path="/" element={<Homepage/>}/>
-      <Route path="/product/:id" element={<ProductDetails/>}/>
-      <Route path="/cart" element={<Cart/>}/>
-     </Routes>
-     <Footer/>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+      <Footer />
     </>
   )
 }

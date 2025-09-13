@@ -70,7 +70,7 @@ const ShopContextProvider = ({ children }) => {
   }
 
   //function to incraese item quantity in cart
-  const incraeseAmount = (id) =>{
+  const increaseAmount = (id) =>{
     const cartItem = cart.find((item) => item.id === id)
     addToCart(cartItem, id)
   }
@@ -106,7 +106,7 @@ const ShopContextProvider = ({ children }) => {
         quantity,
         clearCart,
          decreaseAmount,
-        incraeseAmount,
+        increaseAmount,
         removeFromCart,
         addToCart,
         setProducts,
