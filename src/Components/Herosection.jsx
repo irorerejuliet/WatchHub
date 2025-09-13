@@ -1,7 +1,7 @@
 
 const Herosection = () => {
   return (
-    <div className="max-w-[1740px] m-auto bg-red-700">
+    <div className="max-w-[1740px] m-auto">
       <div>
         <div>
           <div className="max-w-[50%] pt-44 lg:px-0 px-4">
