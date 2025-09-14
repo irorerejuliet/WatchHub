@@ -15,7 +15,7 @@ const CartDetials = ({item}) => {
             <div>
                 <h3>{title}</h3>
                 <div>
-                     <FiTrash2/> Remove
+                     <FiTrash2 onClick={() => removeFromCart(id)}/> Remove
                 </div>
             </div>
         </div>
