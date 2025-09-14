@@ -19,7 +19,7 @@ const Herosection = () => {
               or evening events.
             </p>
             <button className="w-full sm:w-auto py-3 px-4 sm:px-10 md:px-16 lg:px-20 text-sm sm:text-base md:text-lg   bg-red-600 hover:bg-red-800  text-white rounded-xl mt-4 ">
-              Shop the Collection
+              Shop the Collection of lutttry watcehes
             </button>
           </div>
         </div>
