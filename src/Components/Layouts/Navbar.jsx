@@ -7,16 +7,16 @@ import { FiMenu, FiX } from "react-icons/fi";
 const Navbar = () => {
   const { quantity } = useContext(ShopContext);
   const [menuOpen, setMenuOpen] = useState(false);
-
+  // bg-[#CAE9EE]
   return (
-    <nav className=" top-0 left-0 w-full bg-[#CAE9EE] shadow-md z-50">
+    <nav className="fixed top-0 left-0 w-full  bg-[#012136] shadow-md z-50 text-white">
       <div className="flex items-center justify-between px-4 sm:px-6 md:px-10">
         {/* Logo */}
         <Link to="/">
           <img
-            src="/images/logo2-removebg-preview.png"
+            src="/images/logo-removebg.png"
             alt="logo"
-            className="w-32 sm:w-40 md:w-56"
+            className="w-32 sm:w-40 md:w-[100px]"
           />
         </Link>
 
@@ -25,7 +25,7 @@ const Navbar = () => {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              isActive ? "text-purple-700" : "hover:text-purple-700"
+              isActive ? "text-blue-700" : "hover:text-blue-900"
             }
           >
             Home

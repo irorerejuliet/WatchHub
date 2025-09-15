@@ -5,7 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         heroImg: "url('/images/Backgroundimg.jpg')",
-        heroimg: "url('/images/backgroundImage2.jpg')",
+        heroimg: "url('/images/BackgroundImage.jpg')",
       },
       fontFamily: {
         poppins: ["Poppins", "san serif"],

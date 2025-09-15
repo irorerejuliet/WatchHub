@@ -4,7 +4,7 @@ import ProductList from '../Components/ProductList';
 
 const Homepage = () => {
   return (
-    <div className="bg-heroImg  bg-cover bg-left h-screen">
+    <div className="bg-heroimg  bg-cover bg-left h-screen">
       <Herosection />
       <ProductList/>
     </div>
