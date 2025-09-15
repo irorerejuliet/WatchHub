@@ -2,6 +2,7 @@ export const productData = [
   {
     id: 1,
     image: "/images/Product-1.avif",
+    width: "216px",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 30,
     categories: "men",
@@ -11,6 +12,7 @@ export const productData = [
   {
     id: 2,
     image: "/images/Product-2.avif",
+    width: "216px",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 10,
     categories: "men",
@@ -20,6 +22,7 @@ export const productData = [
   {
     id: 3,
     image: "/images/Product-3.avif",
+    width: "216px",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 40,
     categories: "men",
@@ -28,7 +31,8 @@ export const productData = [
   },
   {
     id: 4,
-    image: "/images/Product-4.avif",
+    image: "/images/Product-4.jpeg",
+    width: "216px",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 67,
     categories: "men",
@@ -37,7 +41,8 @@ export const productData = [
   },
   {
     id: 5,
-    image: "/images/Product-3.webp",
+    image: "/images/Product-5.jpeg",
+    width: "250px",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 69,
     categories: "men",
@@ -46,7 +51,8 @@ export const productData = [
   },
   {
     id: 6,
-    image: "/images/Product-14.webp",
+    image: "/images/Product-6.png",
+    width: "200px",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 70,
     categories: "men",
@@ -55,7 +61,8 @@ export const productData = [
   },
   {
     id: 7,
-    image: "/images/Product-15.webp",
+    image: "/images/Product-7.jpeg",
+    width: "250px",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 10,
     categories: "men",
@@ -64,7 +71,8 @@ export const productData = [
   },
   {
     id: 8,
-    image: "/images/Product-13.webp",
+    image: "/images/Product-8.jpeg",
+    width: "250px",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 40,
     categories: "men",
@@ -73,7 +81,8 @@ export const productData = [
   },
   {
     id: 9,
-    image: "/images/Product-16.webp",
+    image: "/images/Product-9.webp",
+    width: "210px",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 56,
     categories: "men",
@@ -82,8 +91,9 @@ export const productData = [
   },
   {
     id: 10,
-    image: "/images/Product-12.avif",
+    image: "/images/Product-10.png",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
+    width: "210px",
     price: 19,
     categories: "men",
     description:
@@ -91,7 +101,8 @@ export const productData = [
   },
   {
     id: 11,
-    image: "/images/Product-11.avif",
+    image: "/images/Product-11.jpeg",
+    width: "210px",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 189,
     categories: "men",
@@ -100,7 +111,8 @@ export const productData = [
   },
   {
     id: 12,
-    image: "/images/Product-12.avif",
+    image: "/images/Product-12.jpeg",
+    width: "210px",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 980,
     categories: "men",
@@ -110,6 +122,7 @@ export const productData = [
   {
     id: 13,
     image: "/images/Product-13.webp",
+    width: "216px",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 190,
     categories: "men",
@@ -119,6 +132,7 @@ export const productData = [
   {
     id: 14,
     image: "/images/Product-14.webp",
+    width: "216px",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 260,
     categories: "men",
@@ -128,6 +142,7 @@ export const productData = [
   {
     id: 15,
     image: "/images/Product-15.webp",
+    width: "216px",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 320,
     categories: "men",
@@ -136,7 +151,8 @@ export const productData = [
   },
   {
     id: 16,
-    image: "/images/Product-16.webp",
+    image: "/images/watch1.webp",
+    width: "216px",
     title: "Galaxy Watch6 Classic (Bluetooth, 47mm)",
     price: 320,
     categories: "men",

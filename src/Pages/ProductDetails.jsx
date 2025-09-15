@@ -1,32 +1,47 @@
-import React, { useContext } from 'react'
-import { ShopContext } from '../Components/context/ShopContext'
-import { productData } from '../Components/constant/productData'
-import { useParams } from 'react-router-dom'
+import React, { useContext } from "react";
+import { ShopContext } from "../Components/context/ShopContext";
+import { productData } from "../Components/constant/productData";
+import { useParams } from "react-router-dom";
 
 const ProductDetails = () => {
-  const {addToCart} = useContext(ShopContext)
+  const { addToCart } = useContext(ShopContext);
+  const { id } = useParams();
 
-  const {id} = useParams()
-
-  const product = productData.find(product =>{
-    return product.id === parseInt(id)
-  })
+  const product = productData.find((product) => product.id === parseInt(id));
 
   return (
-    <div>
-      <div className='flex items-center p-40'>
-        <div className='w-[460px]'>
-          <img src={product.image} alt={product.title}/>
+    <div className="px-4 sm:px-8 lg:px-16 xl:px-32 py-40">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-20">
+        {/* Image section */}
+        <div className="w-full max-w-sm lg:max-w-md">
+          <img
+            src={product.image}
+            alt={product.title}
+            className=""
+          />
         </div>
-        <div className='p-40'>
-          <h3 className='text-2xl font-bold'>{product.title}</h3>
-          <p className='text-xl font-medium text-red-700 mt-10'>${product.price}</p>
-          <p className='text-xl text-gray-500 mt-10'>{product.description}</p>
-          <button className='py-2 px-8 rounded-md  bg-red-600 hover:bg-red-800 mt-3 text-white' onClick={() => addToCart(product, id)}>Add to Cart</button>
+
+        {/* Text section */}
+        <div className="w-full max-w-2xl">
+          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold">
+            {product.title}
+          </h3>
+          <p className="text-lg sm:text-xl font-medium text-red-700 mt-6">
+            ${product.price}
+          </p>
+          <p className="text-base sm:text-lg text-gray-500 mt-6">
+            {product.description}
+          </p>
+          <button
+            className="py-2 px-6 sm:px-8 rounded-md bg-red-600 hover:bg-red-800 mt-6 text-white"
+            onClick={() => addToCart(product, id)}
+          >
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProductDetails
+export default ProductDetails;

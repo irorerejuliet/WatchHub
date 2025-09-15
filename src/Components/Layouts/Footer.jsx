@@ -1,9 +1,25 @@
 import React from 'react'
+import { BsInstagram, BsTwitter, BsTwitterX } from 'react-icons/bs'
+import { FaFacebook } from 'react-icons/fa'
 
 const Footer = () => {
   return (
     <div className='bg-yellow-700'>
-      <h2 className='text-5xl text-white font-bold'> irorere juliet i am borm to be remarkable </h2>
+      <div>
+        <div>
+          <div>
+            <h2>ShopX</h2>
+          </div>
+          <div>
+            <FaFacebook/>
+            <BsInstagram/>
+            <BsTwitterX/>
+          </div>
+        </div>
+        <div>
+          <p>Copy right @ ShopX 2025. All rights reserved</p>
+        </div>
+      </div>
     </div>
   )
 }
