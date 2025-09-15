@@ -8,7 +8,7 @@ import Cart from "./Pages/Cart"
 
 const App = () => {
   return (
-    <>
+    <div className="">
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -16,7 +16,7 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   )
 }
 
