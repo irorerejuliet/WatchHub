@@ -8,21 +8,16 @@ import Cart from "./Pages/Cart"
 
 const App = () => {
   return (
-    // make the full page a flex column
-    <div className="min-h-screen flex flex-col">
+    
+    <>
       <Navbar />
-
-      {/* main content grows to fill space */}
-      <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
-      </main>
-
       <Footer />
-    </div>
+    </>
   );
 }
 

@@ -59,7 +59,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#CAE9EE] px-4 pb-4">
+        <div className="md:hidden bg-[#012136] px-4 pb-4">
           <ul className="flex flex-col gap-4 text-base font-medium uppercase">
             <NavLink
               to="/"
