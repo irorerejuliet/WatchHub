@@ -30,8 +30,18 @@ const Navbar = () => {
           >
             Home
           </NavLink>
-          <li className="hover:text-purple-700 cursor-pointer">Product</li>
-          <li className="hover:text-purple-700 cursor-pointer">Contact</li>
+          <NavLink
+            to="/productPage"
+            className="hover:text-purple-700 cursor-pointer"
+          >
+            Product
+          </NavLink>
+          <NavLink
+            to="/contactPage"
+            className="hover:text-purple-700 cursor-pointer"
+          >
+            Contact
+          </NavLink>
           <li className="hover:text-purple-700 cursor-pointer">App</li>
         </ul>
 
